@@ -1,0 +1,886 @@
+<html>
+<head>
+<title>TestNG:  DSAlgoTestonchrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DSAlgoTestonchrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 01 23:43:04 CDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>384 seconds (384507 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase5()'><b>testcase5</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-2071912490" onClick='toggleBox("Output-2071912490", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2071912490" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2071912490">
+Test to validate if alert popped if user tries to run without enterig code<br/>
+Run Button clicked successfully<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase5(linkedlist_create_Test.java:154)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2071912490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2071912490'><pre>java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:185)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:192)
+	at com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase5(linkedlist_create_Test.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase5()'><b>testcase5</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-245229379" onClick='toggleBox("Output-245229379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-245229379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-245229379">
+Test to validate if alert popped if user tries to run without enterig code<br/>
+Run Button clicked successfully<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase5(linkedlist_types_Test.java:150)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245229379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace245229379'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase5(linkedlist_types_Test.java:150)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test<br/>
+<a href="#Output-612123056" onClick='toggleBox("Output-612123056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-612123056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612123056">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test@63fdab07</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-2108657695" onClick='toggleBox("Output-2108657695", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2108657695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2108657695">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.newUser.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.newUser<br/>
+<a href="#Output-1133522104" onClick='toggleBox("Output-1133522104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1133522104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1133522104">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.newUser@5553d0f5</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br/>
+<a href="#Output-1615831430" onClick='toggleBox("Output-1615831430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1615831430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1615831430">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-1017749486" onClick='toggleBox("Output-1017749486", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1017749486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1017749486">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-813050612" onClick='toggleBox("Output-813050612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-813050612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-813050612">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-1118077356" onClick='toggleBox("Output-1118077356", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118077356" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118077356">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase1()'><b>testcase1</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-709655449" onClick='toggleBox("Output-709655449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-709655449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-709655449">
+Test to Validate if user is able to launch Ds-algo Home page:<br/>
+User successfully navigated to home page<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-377441950" onClick='toggleBox("Output-377441950", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-377441950" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-377441950">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test@63fdab07</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-153634160" onClick='toggleBox("Output-153634160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-153634160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-153634160">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.newUser.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.newUser<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-1521004631" onClick='toggleBox("Output-1521004631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1521004631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1521004631">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.numpy_ninja.dsalgo.tests.newUser@5553d0f5</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-1708038845" onClick='toggleBox("Output-1708038845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1708038845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1708038845">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-1551094652" onClick='toggleBox("Output-1551094652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1551094652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1551094652">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-1885844547" onClick='toggleBox("Output-1885844547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1885844547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1885844547">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-360475281" onClick='toggleBox("Output-360475281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-360475281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-360475281">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase2()'><b>testcase2</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br>Parameters: jeyanthiv, dsalgo123#<br/>
+<a href="#Output-1641310958" onClick='toggleBox("Output-1641310958", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1641310958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1641310958">
+Test to Validate if user is able to login and launch the Linked List page by clicking GET STARTED button:<br/>
+User successfully navigated to Login Page<br/>
+Login Button clicked successfully<br/>
+Get Started button clicked successfully<br/>
+User successfully navigated to Linked List Page by clicking Get Started Button<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test<br/>
+<a href="#Output-1180195367" onClick='toggleBox("Output-1180195367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1180195367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1180195367">
+Test to validate if user is able to launch Implement Linked list in python page<br/>
+Implement Linked list in python clicked successfully<br/>
+User successfully navigated to Implement Linked list in python page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test@63fdab07</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-1090434106" onClick='toggleBox("Output-1090434106", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1090434106" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1090434106">
+Test to validate if user is able to launch Deletion page<br/>
+Traversal link clicked successfully<br/>
+User successfully navigated to Deletion page.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.newUser.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.newUser<br/>
+<a href="#Output-2124605851" onClick='toggleBox("Output-2124605851", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124605851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124605851">
+Test to Validate if user is able to login and launch the Linked List page by selecting the topic from dropdown:<br/>
+Linked list topic successfully selected from dropdown<br/>
+User successfully navigated to Linked List Page by selecting from dropdown<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.newUser@5553d0f5</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br/>
+<a href="#Output-1452429172" onClick='toggleBox("Output-1452429172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1452429172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1452429172">
+Test to validate if user is able to launch the Introduction page from linked list<br/>
+Introduction link clicked successfully<br/>
+User successfully navigated to Linked List Introduction page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-369119775" onClick='toggleBox("Output-369119775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-369119775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-369119775">
+Test to validate if user is able to launch Travesral page<br/>
+Traversal link clicked successfully<br/>
+User successfully navigated to Travesral page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-1760555826" onClick='toggleBox("Output-1760555826", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760555826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760555826">
+Test to validate if user is able to launch Insertion page<br/>
+Insertion link clicked successfully<br/>
+User successfully navigated to Insertion page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-1119262138" onClick='toggleBox("Output-1119262138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1119262138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1119262138">
+Test to validate if user is able to launch Creating linked list page from linked list<br/>
+Creating linked list link clicked successfully<br/>
+User successfully navigated to Creating Linked List page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase3()'><b>testcase3</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-194605361" onClick='toggleBox("Output-194605361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194605361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194605361">
+Test to validate if user is able to launch Types of linked list page from linked list<br/>
+Types of linked list link clicked successfully<br/>
+User successfully navigated to Types of Linked List page.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-473930664" onClick='toggleBox("Output-473930664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-473930664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-473930664">
+Test to validate if user able to launch Try Editor Page from Deletion Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.newUser.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.newUser<br/>
+<a href="#Output-45092751" onClick='toggleBox("Output-45092751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45092751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45092751">
+Test to validate if user is able to logout from Linked List page:<br/>
+User is logged out Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.newUser@5553d0f5</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br/>
+<a href="#Output-1299465842" onClick='toggleBox("Output-1299465842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1299465842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1299465842">
+Test to validate if user able to launch Try Editor Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-1403954552" onClick='toggleBox("Output-1403954552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1403954552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1403954552">
+Test to validate if user able to launch Try Editor Page from Traversal Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-1367399981" onClick='toggleBox("Output-1367399981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1367399981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1367399981">
+Test to validate if user able to launch Try Editor Page from Traversal Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-1692926240" onClick='toggleBox("Output-1692926240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1692926240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1692926240">
+Test to validate if user able to launch Try Editor Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase4()'><b>testcase4</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-1099128303" onClick='toggleBox("Output-1099128303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1099128303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1099128303">
+Test to validate if user able to launch Try Editor Page<br/>
+Try Here Button clicked successfully<br/>
+User successfully navigated to Editor Page/Assessment page.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-2097465107" onClick='toggleBox("Output-2097465107", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2097465107" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2097465107">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br/>
+<a href="#Output-1683582055" onClick='toggleBox("Output-1683582055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1683582055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1683582055">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-1164349155" onClick='toggleBox("Output-1164349155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1164349155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1164349155">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-437834002" onClick='toggleBox("Output-437834002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-437834002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-437834002">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-763197" onClick='toggleBox("Output-763197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-763197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-763197">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase6()'><b>testcase6</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-1557431214" onClick='toggleBox("Output-1557431214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1557431214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1557431214">
+Test to validate if user able to enter valid code , click Run and see the output<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Output for the code is displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase7()'><b>testcase7</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-1983709656" onClick='toggleBox("Output-1983709656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1983709656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1983709656">
+Test to validate if alert is popped when user tries to run invalid code<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Alert is popped successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase7()'><b>testcase7</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-831343254" onClick='toggleBox("Output-831343254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-831343254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-831343254">
+Test to validate if alert is popped when user tries to run invalid code<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Alert is popped successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase7()'><b>testcase7</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-1796621148" onClick='toggleBox("Output-1796621148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1796621148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1796621148">
+Test to validate if alert is popped when user tries to run invalid code<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Alert is popped successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase7()'><b>testcase7</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-1819620634" onClick='toggleBox("Output-1819620634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1819620634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1819620634">
+Test to validate if alert is popped when user tries to run invalid code<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Alert is popped successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase7()'><b>testcase7</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-1540475836" onClick='toggleBox("Output-1540475836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1540475836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1540475836">
+Test to validate if alert is popped when user tries to run invalid code<br/>
+Code is written successfully in the editor form<br/>
+Run Button clicked successfully<br/>
+Alert is popped successfully<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test<br/>
+<a href="#Output-1445396487" onClick='toggleBox("Output-1445396487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1445396487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1445396487">
+Test to validate if user is able to logout from  Implement Linked list in python page:<br/>
+Navigating back to Introduction page<br/>
+User is logged out Successfully from Implement Linked list in python Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test@63fdab07</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test<br/>
+<a href="#Output-387173456" onClick='toggleBox("Output-387173456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-387173456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-387173456">
+Test to validate if user is able to logout from  Deletion page:<br/>
+Navigating back to Deletion page<br/>
+User is logged out Successfully from Deletion Page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test@7b5a12ae</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test<br/>
+<a href="#Output-502178024" onClick='toggleBox("Output-502178024", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502178024" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502178024">
+Test to validate if user is able to logout from Linked List introduction page:<br/>
+Navigating back to Introduction page<br/>
+User is logged out Successfully from Linked List Introduction Page<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test@1af687fe</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test<br/>
+<a href="#Output-764629649" onClick='toggleBox("Output-764629649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-764629649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-764629649">
+Test to validate if user is able to logout from  Traversal page:<br/>
+Navigating back to Traversal page<br/>
+User is logged out Successfully from Implement Linked list in python Page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Traversal_Test@14dda234</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test<br/>
+<a href="#Output-2117170399" onClick='toggleBox("Output-2117170399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2117170399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2117170399">
+Test to validate if user is able to logout from  Insertion page:<br/>
+Navigating back to Traversal page<br/>
+User is logged out Successfully from Insertion Page<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_Insertion_Test@3f390d63</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_create_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_create_Test<br/>
+<a href="#Output-223219091" onClick='toggleBox("Output-223219091", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223219091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223219091">
+Test to validate if user is able to logout from creating Linked List page:<br/>
+Navigating back to Introduction page<br/>
+User is logged out Successfully from Creating Linked List Page<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_create_Test@74a6a609</td></tr>
+<tr>
+<td title='com.numpy_ninja.dsalgo.tests.linkedlist_types_Test.testcase8()'><b>testcase8</b><br>Test class: com.numpy_ninja.dsalgo.tests.linkedlist_types_Test<br/>
+<a href="#Output-1329246511" onClick='toggleBox("Output-1329246511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1329246511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329246511">
+Test to validate if user is able to logout from Types of Linked List page:<br/>
+Navigating back to Types of Linked list page<br/>
+User is logged out Successfully from Types of Linked List page<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.numpy_ninja.dsalgo.tests.linkedlist_types_Test@5a411614</td></tr>
+</table><p>
+</body>
+</html>

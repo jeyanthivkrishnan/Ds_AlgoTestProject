@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="10">
+  <test  name="DSAlgoTestonchrome">
+  <parameter name ="browsername" value="chrome"></parameter>
+    <classes>
+      <class name="com.numpy_ninja.dsalgo.tests.newUser"/>
+       </classes>
+  </test> <!-- DSAlgoTest -->
+   <test  name="DSAlgoTestonfirefox">
+  <parameter name ="browsername" value="firefox"></parameter>
+    <classes>
+      <class name="com.numpy_ninja.dsalgo.tests.newUser"/>
+       </classes>
+  </test> <!-- DSAlgoTest -->
+</suite> <!-- Suite -->

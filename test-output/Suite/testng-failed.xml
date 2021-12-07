@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.numpy_ninja.dsalgo.listeners.test_Listeners"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="dsalgo-linkedlistTestintro(failed)">
+    <classes>
+      <class name="com.numpy_ninja.dsalgo.tests.linkedlist">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="afterTest"/>
+          <include name="linkedlist_testcase4"/>
+        </methods>
+      </class> <!-- com.numpy_ninja.dsalgo.tests.linkedlist -->
+      <class name="com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test">
+        <methods>
+          <include name="afterTest"/>
+          <include name="linkedlist_Introduction_testcase6"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test -->
+    </classes>
+  </test> <!-- dsalgo-linkedlistTestintro(failed) -->
+</suite> <!-- Failed suite [Suite] -->

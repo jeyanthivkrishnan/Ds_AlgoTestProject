@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test  name="DSAlgoTestonchrome">
+   <parameter name ="browsername" value="chrome"></parameter>
+    <classes>
+      <class name="com.numpy_ninja.dsalgo.tests.linkedlist_Implementpython_Test"/>
+      <class name="com.numpy_ninja.dsalgo.tests.linkedlist_Deletion_Test"/>
+      <class name="com.numpy_ninja.dsalgo.tests.newuser_Register_test"/>
+      <class name="com.numpy_ninja.dsalgo.tests.login_Page"/>
+    </classes>
+  </test> <!-- DSAlgoTestonchrome -->
+ 
+    
+</suite> <!-- Suite -->

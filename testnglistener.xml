@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+<listeners>
+<listener class-name="com.numpy_ninja.dsalgo.listeners.test_Listeners"/>
+</listeners>
+  <test  name="dsalgo-linkedlistTest">
+    <classes>
+   	    <class name="com.numpy_ninja.dsalgo.tests.linkedlist_Introduction_Test"/>
+   	     <class name="com.numpy_ninja.dsalgo.tests.linkedlist"/>
+    </classes>
+    
+  </test> <!-- dsalgo-linkedlistTest -->
+  
+</suite> <!-- Suite -->
